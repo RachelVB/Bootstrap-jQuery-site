@@ -35,11 +35,19 @@ body {
   height: 32rem;
 }
 
-/* .carousel-item img {
-  width: 100%;  
+/* .carousel-inner {
+  width: 1500px;
   height: auto;
-  margin-top: -21rem;
-} */
+  margin: 0 auto;
+}
+
+.carousel-item img {
+  object-fit:cover;
+  height: 500px !important;
+  width:350px;
+}  */
+
+
 
 /* .carousel-caption.black-text {
   color: black;
@@ -87,7 +95,6 @@ body {
     font-size: 1.25rem;
     line-height: 1.4;
   }
-
 
   .featurette-heading {
     font-size: 50px;
