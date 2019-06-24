@@ -16,6 +16,11 @@ body{
 
 /* 
 NavBar */
+.active-nav {
+  font-size: 30px;
+  transition: 0.8s; 
+}
+
 .navbar {
   font-size: 18px;
   padding-bottom: 10px;
@@ -70,6 +75,12 @@ nav .logo {
   display: block;
 }
 
+.logo:hover,
+  .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+  }
+
 @media screen and (max-width: 450px) {
 
   .navbar {
@@ -112,6 +123,19 @@ nav .logo {
 }
 
 @media screen and (min-width: 451px) and (max-width: 800px) {
+
+  /* Add these classes */
+  .nav-linkshide {
+    display: none;
+  }
+
+  .logo-reposition {
+    margin-top: -10rem; 
+
+  }
+
+  
+
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -134,10 +158,11 @@ nav .logo {
 
   .nav-links {
     margin-left: -2rem;
-  }
+  } 
 
+  /* Remove this class */
   .logo {
-    margin-top: -15rem;
+    margin-top: -15rem; 
   }
 
   .navbar-toggle {
