@@ -22,8 +22,11 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">
 
     <!-- Bootstrap core CSS -->
-<link  href="/GitHub/Bootstrap-jQuery-site/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+   
+    <link href="/GitHub/Bootstrap-jQuery-site/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    
 
     <style>
       .bd-placeholder-img {
@@ -48,7 +51,7 @@
   <body>
     <header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -67,7 +70,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="mailto:info@vbnet-works.com"><strong>Email:</strong>info@vbnet-works.com</a>
-            </li>
+            </li> -->
             <!-- <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li>
@@ -77,13 +80,38 @@
                 <a class="dropdown-item" href="#"><strong>Phone:</strong> 250-802-1185</a>
                 <a class="dropdown-item" href="#">Another action</a>
                 <a class="dropdown-item" href="#">Something else here</a> -->
-              </div>
+              <!-- </div>
             </li>
           </ul>
         </div>
-      </nav>
+      </nav> -->
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+      <nav class="navbar">
+          <span class="navbar-toggle" id="js-navbar-toggle">
+                  <i class="fas fa-bars"></i>
+              </span>
+          <a href="#" class="logo">VBNET-Works</a>
+          <ul class="main-nav" id="js-menu">
+            <li>
+              <a href="#" class="nav-links">Home</a>
+            </li>
+            <li>
+              <a href="#" class="nav-links">Products</a>
+            </li>
+            <li>
+              <a href="#" class="nav-links">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="nav-links">Contact Us</a>
+            </li>
+            <li>
+              <a href="#" class="nav-links">Blog</a>
+            </li>
+          </ul>
+        </nav>
+
+      <!-- <nav class="navbar navbar-expand-lg ">
           <div class="container">
             <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
@@ -92,6 +120,9 @@
         
             <div class="collapse navbar-collapse" id="navbarsExample07">
               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="home-portfolio.html">VBNET-Works <span class="sr-only">(current)</span></a>
+                    </li>
                 <li class="nav-item active">
                   <a class="nav-link" href="home-portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
                 </li>
@@ -100,7 +131,7 @@
                 </li>
                 <li class="nav-item active">
                   <a class="nav-link" href="/GitHub/Bootstrap-jQuery-site/portfolio/index.html">About the Developer</a>
-                </li>
+                </li> -->
                 <!--  <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                   <div class="dropdown-menu" aria-labelledby="dropdown07">
@@ -108,21 +139,25 @@
                     <a class="dropdown-item" href="#">Another action</a>
                     <a class="dropdown-item" href="#">Something else here</a>
                   </div> -->
-                </li>
-              </ul>
+                <!-- </li>
+              </ul> -->
               <!-- <form class="form-inline my-2 my-md-0">
                 <input class="form-control" type="text" placeholder="Search" aria-label="Search">
               </form> -->
-            </div>
+            <!-- </div>
           </div>
-        </nav>            
+        </nav>             -->
 
 
 </header>
 
 <main role="main">
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="container-fluid">
+        <img src="https://images.pexels.com/photos/509922/pexels-photo-509922.jpeg?cs=srgb&dl=apartment-chair-contemporary-509922.jpg&fm=jpg" class="img-fluid" alt="Responsive image">
+      </div>
+
+  <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -130,19 +165,19 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active one">
-        <img class="d-block w-100" src="https://images.pexels.com/photos/1764702/pexels-photo-1764702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" width="100%" height="100%" alt="responsive">
-        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg> -->
+        <img class="first-slide" src="https://images.pexels.com/photos/1764702/pexels-photo-1764702.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" width="100%" height="100%" alt="responsive">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg> 
         <div class="container">
           <div class="carousel-caption text-left">
             <h1>You Deserve the Best</h1>
             <p>Make your money work for you. A good website and strategic marketing will make your life easier</p>
-            <!-- <p><a class="btn btn-lg btn-primary" href="" role="button">Contact us!</a></p> -->
+            <p><a class="btn btn-lg btn-primary" href="" role="button">Contact us!</a></p> 
           </div>
         </div>
       </div>
       <div class="carousel-item two">
-          <img class="d-block w-100" src="https://images.pexels.com/photos/916017/pexels-photo-916017.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" width="100%" height="100%" alt="responsive">
-        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg> -->
+          <img class="second-slide" src="https://images.pexels.com/photos/916017/pexels-photo-916017.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" width="100%" height="100%" alt="responsive">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg> 
         <div class="container">
           <div class="carousel-caption text-left black-text">
             <h1>What we do</h1>
@@ -152,9 +187,9 @@
         </div>
       </div>
       <div class="carousel-item three">
-          <img class="d-block w-100" src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" alt="responsive">
+          <img class="third-slide" src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" alt="responsive">
 
-        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg> -->
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg> 
         <div class="container">
           <div class="carousel-caption text-left">
             <h1>Let's start today!</h1>
@@ -172,7 +207,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-  </div>
+  </div> -->
 
 
   <!-- Marketing messaging and featurettes
@@ -264,7 +299,7 @@
             <li>Create OH&S Manuals</li>
             <li>And much more!</li>
             <br>
-            <p><strong>Contact me today for a conultation on your project!</strong></p>
+            <p><strong>Contact me today for a consultation on your project!</strong></p>
           </ul>
       </div>
       <div class="col-md-5">
@@ -288,12 +323,18 @@
     <!-- <a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
   </footer>
 </main>
-<script
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+crossorigin="anonymous"></script>
+<script src="/GitHub/Bootstrap-jQuery-site/js/bootstrap.bundle.min.js" 
+integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" 
+crossorigin="anonymous"></script>
+<!-- <script
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
-  <!-- <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script> -->
-      
-  <script src="/GitHub/Bootstrap-jQuery-site/js/main-home.js"></script>
+   <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+      -->
+  <script src="/GitHub/Bootstrap-jQuery-site/js/main-home.js"></script> 
     </body>
 </html>
