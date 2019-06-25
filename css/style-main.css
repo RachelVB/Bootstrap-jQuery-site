@@ -4,6 +4,7 @@ body {
   padding-top: 0rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
+  font-family: "Karla", Arial, sans-serif;
 }
 
 /* .collapse.navbar-collapse.justify-content-md-start {
@@ -62,14 +63,14 @@ nav .logo {
   margin-left: 20px;
 }
 
-.navbar-toggle {
+/* .navbar-toggle {
   position: absolute;
   top: 10px;
   right: 20px;
   cursor: pointer;
   color: rgba(12, 11, 11, 0.8);
   font-size: 24px;
-}
+} */
 
 .active {
   display: block;
@@ -96,14 +97,20 @@ nav .logo {
     /* margin-right: 30px; */
     flex-direction: column;
     justify-content: flex-end;
+  
   }
 
   .main-nav li {
-    margin: 1rem;
+    margin: 0;
     text-align: left;
   }
 
-  .nav-links {
+  .main-nav li a {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: none;
     margin-left: -2rem;
   }
 
@@ -112,7 +119,12 @@ nav .logo {
   }
 
   .navbar-toggle {
-    display: none;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(12, 11, 11, 0.8);
+    font-size: 24px;
   }
 
   .logo:hover,
@@ -120,19 +132,13 @@ nav .logo {
     color: rgba(255, 255, 255, 1);
   }
 
-}
-
-@media screen and (min-width: 451px) and (max-width: 800px) {
-
-  /* Add these classes */
-  .nav-linkshide {
+  p.text-center {
     display: none;
   }
 
-  .logo-reposition {
-    margin-top: -10rem; 
+}
 
-  }
+@media screen and (min-width: 451px) and (max-width: 800px) {
 
   
 
@@ -146,8 +152,9 @@ nav .logo {
 
   .main-nav {
     display: flex;
-    /* margin-right: 30px; */
-    flex-direction: column;
+    margin-left: 11rem;
+    margin-top: -5rem; 
+    flex-direction: row;
     justify-content: flex-end;
   }
 
@@ -158,12 +165,12 @@ nav .logo {
 
   .nav-links {
     margin-left: -2rem;
-  } 
+  }  
 
-  /* Remove this class */
+  
   .logo {
-    margin-top: -15rem; 
-  }
+    display: inline; 
+  } 
 
   .navbar-toggle {
     display: none;
@@ -173,6 +180,8 @@ nav .logo {
   .nav-links:hover {
     color: rgba(255, 255, 255, 1);
   }
+
+  
 }
 
 
@@ -232,7 +241,13 @@ nav .logo {
   color: rgba(255, 255, 255, 1);
 } */
 
-
+p.text-center {
+  position: absolute;
+  /* margin: 10rem 20rem 20rem 30rem; */
+  top: 30%;
+  left: 20%;
+  font-size: 50px;
+}
 
 
 

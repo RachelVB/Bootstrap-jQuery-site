@@ -1,3 +1,5 @@
+
+
 $(document).ready(() => {
 
   $('.nav-links').on('mouseenter', event => {
@@ -6,17 +8,42 @@ $(document).ready(() => {
     $(event.currentTarget).removeClass('active-nav')
   })
 
-  /* Iphone size */
-  $(window).resize(function () { 
+$('.logo').on('click', () => {
 
-    if ($('header').width() <= 500 ) {
-      $('nav').remove('.main-nav');
-    }
-    
-  });
-  
+  $('.main-nav').toggleClass('mobile-nav');
+
+ 
+})
+
+
+
+  // $(window).on("resize", function (e) {
+  //   checkScreenSize();
   
 });
+
+// checkScreenSize();
+
+
+// function checkScreenSize(){
+//   let newWindowWidth = $(window).width();
+//   if (newWindowWidth < 800) {
+//     $('.main-nav').addClass('nav-linkshide');
+//   }
+// }
+// });
+
+
+
+/* Iphone size */
+// $(window).resize(function () { 
+
+//   if ($('header').width() <= 800 ) {
+//     $('.main-logo').removeClass('logo');
+//     $('.main-nav').addClass('nav-linkshide');
+//   }
+  
+// });
 
 // let mainNav = document.getElementById('js-menu');
 // let navBarToggle = document.getElementById('js-navbar-toggle');
