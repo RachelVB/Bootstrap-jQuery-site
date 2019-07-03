@@ -3,9 +3,9 @@
 $(document).ready(() => {
 
 
-    $('div.col-md-7.hide').hide();
-    $('div.col-md-7.hide1').hide();
-    $('div.col-md-7.hide2').hide();
+    $('div.hide').hide();
+    $('div.hide1').hide();
+    $('div.hide2').hide();
 
   
   
@@ -23,25 +23,26 @@ $(document).ready(() => {
 
 
 
-$('.icon-container').on('click', () => {
+$('.icon-container').on('mouseenter', () => {
   $('.icon-container').animate({
     paddingLeft: '20rem'
    })
 
-   $('.hide').show("fold", 4000);
-
+   $('.hide').show("fold", 2000);
+   $('div.hide').removeClass('hide');
    
  });
  /* .on('mouseleave', () => {
    $('.hide').fadeOut('slow')
  }) */
 
- $('.icon-containerone').on('click', () => {
+ $('.icon-containerone').on('mouseenter', () => {
   $('.icon-containerone').animate({
     paddingLeft: '20rem'
    })
 
-   $('.hide1').show("fold", 4000);
+   $('.hide1').show("fold", 2000);
+   $('div.hide1').removeClass('hide1');
 
    
  });
@@ -49,20 +50,45 @@ $('.icon-container').on('click', () => {
   $('.hide1').fadeOut('slow')
 }) */
 
-$('.icon-containertwo').on('click', () => {
+$('.icon-containertwo').on('mouseenter', () => {
   $('.icon-containertwo').animate({
     paddingLeft: '20rem'
    })
+   $('.hide2').show("fold", 2000);
+   $('div.hide2').removeClass('hide2');
 
-   $('.hide2').show("fold", 4000);
 
-   
  });
  /* .on('mouseleave', () => {
   $('.hide2').fadeOut('slow')
 }) */
 
 
+
+
+$(window).on("resize", function (e) {
+  checkScreenSize();
+});
+
+checkScreenSize();
+
+function checkScreenSize(){
+  var newWindowWidth = $(window).width();
+  if (newWindowWidth < 760) {
+    $('.main-nav').addClass('mobile-nav');
+    $('.mobile-nav').slideToggle(400);
+  }
+  else
+  {
+    $('.main-nav').removeClass('mobile-nav');
+  }
+}
+
+
+
+/* $('nav.navbar').on('click', () => {
+  $('.mobile-nav').slideToggle(400);
+}); */
 
   // $('.featurette').on('mouseenter', () => {
   // $(this).next('.col-md-7').removeClass(".hide")

@@ -20,6 +20,10 @@ $(document).ready(() => {
 
     })
 
+    $('nav.navbar').on('click', () => {
+      $('.mobile-nav').slideToggle(400);
+    });
+
     // $('.featurette').on('mouseover', event => {
 //   $(event.currentTarget).addClass('feature-color').fadeIn(100)
 //   }).on('mouseleave', event => {
