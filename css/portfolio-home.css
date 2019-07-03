@@ -238,6 +238,11 @@ nav .logo {
   .card.mb-4 {
     opacity: 0.30;
   }
+
+  .bottom-text {
+    padding: 3rem;
+    font-size: 2rem;
+  }
   
 
   /* Footer */
