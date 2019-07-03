@@ -74,7 +74,7 @@ checkScreenSize();
 
 function checkScreenSize(){
   var newWindowWidth = $(window).width();
-  if (newWindowWidth < 760) {
+  if (newWindowWidth < 700) {
     $('.main-nav').addClass('mobile-nav');
     $('.mobile-nav').slideToggle(400);
   }
