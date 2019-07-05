@@ -24,6 +24,27 @@ $(document).ready(() => {
       $('.mobile-nav').slideToggle(400);
     });
 
+
+/* Mobile Version JQuery */
+
+$(window).on("resize", function (e) {
+  checkScreenSize();
+});
+
+checkScreenSize();
+
+function checkScreenSize(){
+  var newWindowWidth = $(window).width();
+  if (newWindowWidth < 700) {
+    $('.main-nav').addClass('mobile-nav');
+    $('.mobile-nav').slideToggle(400);
+  }
+  else
+  {
+    $('.main-nav').removeClass('mobile-nav');
+  }
+}
+
     // $('.featurette').on('mouseover', event => {
 //   $(event.currentTarget).addClass('feature-color').fadeIn(100)
 //   }).on('mouseleave', event => {
