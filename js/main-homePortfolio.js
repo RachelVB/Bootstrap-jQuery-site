@@ -45,11 +45,6 @@ function checkScreenSize(){
   }
 }
 
-    // $('.featurette').on('mouseover', event => {
-//   $(event.currentTarget).addClass('feature-color').fadeIn(100)
-//   }).on('mouseleave', event => {
-//     $(event.currentTarget).removeClass('feature-color').fadeOut
-// })
   
 
 })

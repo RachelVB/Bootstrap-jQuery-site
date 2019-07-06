@@ -1,9 +1,28 @@
 
+/* 
+$(function() {
+  let menuVisible = false;
+  $('nav.nav-bar').on('click', () => {
+    if (menuVisible) {
+      $('nav.nav-bar').css({'display':'none'});
+      menuVisible = false;
+      return;
+    }
+    $('nav.nav-bar').css({'display':'block'});
+    menuVisible = true;
+  });
+  $('nav.nav-bar').on('click', () => {
+    $(this).css({'display':'none'});
+    menuVisible = false;
+  });
+}); */
+
 
 $(document).ready(() => {
 
 
     $('div.hide').hide();
+    $('div.hide0').hide();
     $('div.hide1').hide();
     $('div.hide2').hide();
 
@@ -36,6 +55,17 @@ $('.icon-container').on('mouseenter', () => {
    $('.hide').fadeOut('slow')
  }) */
 
+ $('.icon-containerzero').on('mouseenter', () => {
+  $('.icon-containerzero').animate({
+    paddingLeft: '20rem'
+   })
+
+   $('.hide0').show("fold", 2000);
+   $('div.hide0').removeClass('hide0');
+   
+ });
+
+
  $('.icon-containerone').on('mouseenter', () => {
   $('.icon-containerone').animate({
     paddingLeft: '20rem'
@@ -63,10 +93,9 @@ $('.icon-containertwo').on('mouseenter', () => {
   $('.hide2').fadeOut('slow')
 }) */
 
+/* Mobile Version JQuery */
 
-
-
-$(window).on("resize", function (e) {
+/* $(window).on("resize", function (e) {
   checkScreenSize();
 });
 
@@ -76,46 +105,50 @@ function checkScreenSize(){
   var newWindowWidth = $(window).width();
   if (newWindowWidth < 700) {
     $('.main-nav').addClass('mobile-nav');
-    $('.mobile-nav').slideToggle(400);
+
+    $('nav.nav-bar').on('click', () => {
+      $('.mobile-nav').slideToggle(400);
+
+    })
+
   }
-  else
-  {
+  /* {
     $('.main-nav').removeClass('mobile-nav');
-  }
-}
+  } 
+} */
 
-
-
-/* $('nav.navbar').on('click', () => {
-  $('.mobile-nav').slideToggle(400);
-}); */
-
-  // $('.featurette').on('mouseenter', () => {
-  // $(this).next('.col-md-7').removeClass(".hide")
-  // }).on('mouseleave', () => {
-  //   $(this).next('.col-md-7').addClass(".hide")
-  // })
-  
-  
-
-
-
-// $('.featurette').on('mouseenter', () => {
-//   $('div.col-md-7').show();
-// })
-
-// $('.featurette').on('mouseover', event => {
-//   $(event.currentTarget).addClass('feature-color').fadeIn(100)
-//   }).on('mouseleave', event => {
-//     $(event.currentTarget).removeClass('feature-color').fadeOut
-// })
-
-
-
-  // $(window).on("resize", function (e) {
-  //   checkScreenSize();
-  
 });
+
+/* Javascript */
+
+/* document.addEventListener('DOMContentLoaded', function() {
+
+  let menuLoaded = document.getElementById(jsMenu);
+  menuLoaded.style.display === 'none';
+ */
+  if (window.innerWidth <= 700) {
+
+    function mobileNav(jsMenu) {
+      
+      let mobileMenu = document.getElementById(jsMenu);
+
+
+      if (mobileMenu.style.display === "none") {
+        mobileMenu.style.display = "none";
+        $('.mobile-nav').slideDown(400);
+    
+      } else {
+        mobileMenu.style.display = "block";
+        $('.mobile-nav').slideUp(400);
+    
+      }
+    };
+    
+    };
+
+/* }, false);
+ */
+
 
 // checkScreenSize();
 
