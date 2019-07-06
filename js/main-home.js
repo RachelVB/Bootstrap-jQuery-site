@@ -131,6 +131,7 @@ function checkScreenSize(){
     function mobileNav(jsMenu) {
       
       let mobileMenu = document.getElementById(jsMenu);
+      
 
 
       if (mobileMenu.style.display === "none") {
